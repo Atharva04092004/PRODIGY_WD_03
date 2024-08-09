@@ -1,0 +1,118 @@
+* {
+    color: white;
+    font-family: sans-serif;
+    transition: 0.2s ease-in-out;
+    user-select: none;
+}
+
+.align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: #252A34;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    text-align: center;
+    padding-top: 5vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+.turn-container {
+    width: 170px;
+    height: 80px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+}
+
+.turn-container h3 {
+    margin: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    color: #f70776; /* First color */
+}
+
+.turn-container .turn-box {
+    border: 3px solid #141010; /* Fourth color */
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.turn-container .turn-box:nth-child(even) {
+    border-right: none;
+}
+
+.bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 85px;
+    height: 40px;
+    background-color: #c3195d; /* Second color */
+    z-index: -1;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 250px;
+    width: 250px;
+    margin: 30px auto;
+    border: 2px solid #680747; /* Third color */
+}
+
+.box {
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 700;
+    border: 2px solid #680747; /* Third color */
+}
+
+.box:hover {
+    background-color: #f70776; /* First color */
+}
+
+#play-again {
+    background-color: #ff5f2e; /* Changed from original color */
+    padding: 10px 25px;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+#play-again:hover {
+    padding: 10px 40px;
+    background-color: #ff2eea; /* Changed to match new color */
+    color: #000;
+}
+
+#return {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 30px;
+    background-color: #141010; /* Fourth color */
+    padding: 15px 30px;
+    text-decoration: none;
+    border: none;
+    position: relative;
+    left: 700px;
+    font: 1.2em sans-serif;
+}
+
+#return:hover {
+    padding: 10px 40px;
+    background-color: #d9c408; /* Changed to match new color */
+    color: #000;
+}
